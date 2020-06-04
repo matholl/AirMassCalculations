@@ -66,11 +66,6 @@ for q in range(0, len(sza)):
     else:
         am.append(1/np.cos(sza[q]))
 
-#for q in range(0, len(sza)):
-#    if sza[q] > np.pi/2:
-#        am.append(1/np.cos(1/(np.pi/2)))
-#    else:
-#        am.append(1/np.cos(sza[q]))
         
 
 maxamind = am.index(np.nanmin(am))
